@@ -1,0 +1,145 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    display: flex;
+    min-height: 100vh;
+}
+
+
+/* sections */
+.intro{
+    width: 50%;
+}
+
+.intro img{
+    width: 100%;
+    height: 100vh;
+    display: block;
+}
+
+.form-section{
+    width: 50%;
+    background: #3c3232;
+    display: flex;
+    flex-direction: column;
+    gap:5rem;
+
+   
+}
+
+.form-section div{
+    align-self: flex-end;
+    margin: 2em 2em 0 0;
+    border: 1px solid white;
+    display: flex;
+  
+}
+
+button{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    padding:0.3em 1.2em;
+    /* font-size: small; */
+}
+
+form{
+    width: 550px;
+    height: auto;
+    align-self: center;
+    padding: 1em;
+    
+}
+
+input{
+    display: block;
+   background: none;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(148, 141, 141);
+    padding: 1em 0 0.8em 0;
+    color: whitesmoke;
+    font-size: 20px;
+
+}
+::placeholder{
+    color: gainsboro;
+    font-size: 20px;
+}
+input:focus{
+    outline: none;
+    background-color: none;
+}
+input:focus::placeholder{
+    font-size: small;
+
+}
+
+
+
+/* form */
+
+h1{
+    font-size: 35px;
+    margin: 0;
+    color: white;
+    margin-bottom: 1.2em;
+    font-weight: 600;
+}
+
+.submit{
+    padding: 0.7em 0;
+    width: 100%;
+    margin-top: 1em;
+    font-size: 18px;
+}
+
+.switch button{
+    border: none;
+}
+
+/* sign up content */
+
+
+.none{
+    display:none;
+}
+
+.brown{
+    background-color: #948d87;
+    transition: background-color 0.5s ease-out 0.05s;
+}
+
+a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+@media (max-width:480px){
+   
+    .intro, .intro img{
+        display: none;
+    }  
+
+    .form-section, form{
+        width: 100%;
+        height: 100vh;
+    }
+
+    h1{
+        font-size: 55px;
+        font-weight: 500;
+        margin-bottom: 1em;
+    }
+}
